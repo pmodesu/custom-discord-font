@@ -1,13 +1,28 @@
 /**
- * @name Custom Font
- * @author Fireentr
- * @authorLink https://github.com/Fireentr
+ * @name Custom Font & Double-tier guild
+ * @changed author - pmo
+ * @authorLink https://github.com/Pimod
  * @version 1.0.0
  * @description Extremely basic theme to change the font of discord for the most part 
  * @source https://github.com/Fireentr/custom-discord-font
  * @website https://fireentr.dev/
 */
 
-* {
-    font-family: 'Arial', sans-serif !important; /* Change with whatever font u want (needs to be installed or imported from google ofnts) */
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/ServerColumns/ServerColumns.css');
+
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Use_Fonts/Yes.css);
+
+:root{
+--columns: 2;
+--guildgap: 5;
+--aligndms: 1;
+--Chat-Font-Used: 'Noto Sans TC Light', normal ;
+--Chat-Font-Size: 16px;
+}
+:not([class="hljs"]):not(code){
+font-family: var(--Chat-Font-Used)!important;
+}
+
+.markup:not(code) {
+font-size: var(--Chat-Font-Size)!important;
 }
