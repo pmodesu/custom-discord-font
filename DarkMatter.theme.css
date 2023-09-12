@@ -7,9 +7,21 @@
 */
 
 @import url('https://DiscordStyles.github.io/DarkMatter/src/base.css');
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/ServerColumns/ServerColumns.css');
 
-/* Variables */
-:root {
+@import url('https://nfld99.github.io/Better-Discord/Source_Code/Use_Fonts/Yes.css');
+
+
+.markup:not(code) {
+font-size: var(--Chat-Font-Size)!important;
+}
+
+:root{
+--columns: 2;
+--guildgap: 5;
+--aligndms: 1;
+--Chat-Font-Used: 'Noto Sans TC Light', normal ;
+--Chat-Font-Size: 16px;
     --avatar-size: 32px;
     --background-image: url('https://i.imgur.com/BD7oYiu.png');
     --home-image: url('https://i.imgur.com/233d55Y.gif');
